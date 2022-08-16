@@ -1,0 +1,343 @@
+/*--------- Hero ---------*/
+
+.heroOther {
+    width: 100%;
+    height: auto; }
+
+.heroOther__box{
+    height: auto;
+    width: 90%;
+    margin-left: 5%; }
+
+.hero__Othertitle {
+    width: 100%;
+    margin: 100px 0 30px 0; }
+
+.hero__OtherTxt {
+    width: 100%;
+    margin-bottom: 50px;
+    display: inline-flex; 
+    flex-wrap: wrap;  }
+
+    .hero__OtherTxt span {
+        margin-right: 10px;
+        margin-bottom: 10px; }
+
+/*--------- About ---------*/
+  
+.about {
+    width: 100%;
+    height: auto; }
+  
+.about__box {
+    width: 90%;
+    height: auto;
+    margin: 50px 5% 80px 5%;  }
+
+.about__txtbox {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: max-content max-content;
+    grid-template-areas: "name fav" "cat btn" ;
+    column-gap: 200px;
+    row-gap: 50px; 
+    align-items: flex-end; }
+
+    .aboutName {
+        grid-area: name;  }
+
+        .aboutName p {
+            font-family: 'Founders Grotesk', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            padding-top: 35px;
+            max-width: 600px; }
+
+    .aboutFav {
+        grid-area: fav;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        column-gap: 80px;  }
+
+        .aboutFav h3 {  
+            font-family: 'Founders Grotesk', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase; }
+
+        .aboutFav p {  
+            max-width: 250px; }
+
+    .aboutCat {
+        grid-area: cat;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-template-rows: max-content max-content;
+        column-gap: 80px;
+        row-gap: 20px;   }
+
+        .aboutCat h5 {  
+            font-family: 'Founders Grotesk', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.9rem;
+            line-height: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase; }
+
+        .aboutCat h6 {  
+            font-family: 'Founders Grotesk', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase; }
+            
+    .aboutBnt {
+        grid-area: btn;  }
+    
+/*--------- Philosophy ---------*/
+  
+.philosophy {
+    width: 100%;
+    height: auto; }
+  
+.philosophy__box {
+    width: 90%;
+    height: auto;
+    margin: 80px 5% 80px 5%;  }
+
+.gridtable__txtbox {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px auto 170px 330px; 
+    grid-template-areas: "col1 col2 col3 . tit bub" ; }
+
+    .col1 { 
+        grid-area: col1;  }
+
+        .col2 {
+            grid-area: col2;  }
+
+            .col3 {
+                grid-area: col3;  }
+
+                .tit {
+                    grid-area: tit;  }
+
+                    .bub {
+                        grid-area: bub;  }
+
+    .gridtable__txtbox h4 {
+        margin-bottom: 20px;
+        letter-spacing: 3px; }
+
+        .gridtable__txt {
+            margin-right: 30px; }
+
+    .gridtable__subtitle {
+        align-self: flex-end;  }
+
+        .gridtable__subtitle h3 {  
+            font-family: 'Founders Grotesk', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.5rem;
+            line-height: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase; 
+            margin-top: 20px;}
+
+    .gridtable__bubble {
+        display: inline-flex; 
+        flex-wrap: wrap; 
+        align-items: flex-end; }
+    
+        .gridtable__bubble span {
+            margin-right: 10px;
+            margin-top: 10px; }
+
+/*--------- Process ---------*/
+  
+.process {
+    width: 100%;
+    height: auto; }
+  
+.process__box {
+    width: 90%;
+    height: auto;
+    margin: 80px 5% 80px 5%;  }
+
+    .process__box h3 {
+        margin-bottom: 40px;  }
+
+    .process__box p {
+        margin-bottom: 50px;  
+        max-width: 400px;}
+
+.process__txt {
+    display: inline-flex; 
+    flex-wrap: wrap; }
+
+    .process__txt span {
+        margin-right: 20px;
+        margin-top: 10px; }
+
+/*--------- Experience ---------*/
+
+.experience {
+    width: 100%;
+    height: auto; }
+  
+.experience__box {
+    width: 90%;
+    height: auto;
+    margin: 80px 5% 50px 5%;  }
+
+.experience__listbox {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    align-items: flex-end; }
+
+    .experience__list{
+        width: 275px;   }
+
+    .experience__listbox h4 {
+        margin: 15px 0 35px 20px; }
+        
+    .experience__listbox p {
+        max-width: 380px;
+        margin-bottom: 35px; }
+
+/*--------- Future (see philosophy module) ---------*/
+  
+.future {
+    width: 100%;
+    height: auto; }
+  
+.future__box {
+    width: 90%;
+    height: auto;
+    margin: 80px 5% 80px 5%;  }
+
+    .future__box p {
+        margin-top: 20px;
+        margin-bottom: 25px;  
+        max-width: 400px;}
+
+        .future__h3 {
+            margin-bottom: 40px;  }
+
+
+/* --------  @ MEDIA --------- */
+
+@media (max-width: 768px) {
+
+    .hero__OtherTxt {
+        margin-bottom: 20px;  }
+
+    .about__txtbox {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content max-content max-content;
+        grid-template-areas: "name" "cat" "fav" "btn" ;
+        row-gap: 50px;  }
+
+    .aboutFav {
+        grid-template-columns:1fr;
+        grid-template-rows: max-content max-content;
+        row-gap: 20px;  }
+
+        .aboutFav p {  
+            max-width: 370px; }
+
+    .gridtable__txtbox {
+        margin-top: 60px;
+        grid-template-columns: 1fr;
+        grid-template-rows:  max-content max-content max-content max-content max-content;
+        grid-template-areas: "col1" "col2" "col3" "tit" "bub" ; 
+        row-gap: 30px; 
+        max-width: 500px; }
+            
+        .gridtable__subtitle {
+            display: inline-flex;  }
+
+            .gridtable__subtitle h3 {  
+                margin-right: 10px;
+                margin-top: 40px; }
+
+    .experience__listbox {
+        margin-top: 70px;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content; }
+
+        .experience__listbox p {
+            margin-top: 25px;
+            margin-bottom: 0;
+            max-width: 500px; }
+
+    .process__box p {
+        max-width: 500px;}
+
+        .process__txt {
+            max-width: 500px;}
+
+    .future__box p {
+        max-width: 500px;}
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .about__txtbox {
+        grid-template-columns: 1fr 250px;
+        column-gap: 100px; }
+
+        .aboutName p {
+            max-width: 450px; }
+
+    .aboutFav {
+        grid-template-columns:1fr;
+        grid-template-rows: max-content max-content;
+        row-gap: 20px;  }
+
+        .aboutFav h3 {  
+            max-width: 100px; }
+      
+        .aboutFav p {  
+            max-width: 250px; }
+}
+
+@media (min-width: 769px) and (max-width: 1180px) {
+
+    .gridtable__txtbox {
+        grid-template-columns: 200px 200px 200px auto;
+        grid-template-rows:  max-content max-content;
+        grid-template-areas: "col1 col2 col3 ." "tit bub bub bub" ; 
+        row-gap: 50px; 
+        }
+
+    .experience__listbox {
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        column-gap: 40px;
+        align-items: flex-end; }
+                
+        .experience__listbox p {
+            margin-bottom: 35px; }
+}
