@@ -1,343 +1,241 @@
-/*--------- Hero ---------*/
+/*--------- fonts ---------*/
+  
+.pBig {  
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px; }
 
-.heroOther {
-    width: 100%;
-    height: auto; }
+.pSm {  
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px; }
 
-.heroOther__box{
-    height: auto;
-    width: 90%;
-    margin-left: 5%; }
-
-.hero__Othertitle {
-    width: 100%;
-    margin: 100px 0 30px 0; }
-
-.hero__OtherTxt {
-    width: 100%;
-    margin-bottom: 50px;
-    display: inline-flex; 
-    flex-wrap: wrap;  }
-
-    .hero__OtherTxt span {
-        margin-right: 10px;
-        margin-bottom: 10px; }
+.h3Bold {  
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; }
 
 /*--------- About ---------*/
   
 .about {
     width: 100%;
-    height: auto; }
+    height: auto; 
+    margin-top: 120px;
+    margin-bottom: 90px;}
   
 .about__box {
     width: 90%;
     height: auto;
-    margin: 50px 5% 80px 5%;  }
-
-.about__txtbox {
+    margin-left:  5%; }  
+    
+.about__title{
     width: 100%;
     height: auto;
+    margin-top: 90px; }  
+
+.about__txt{
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
     display: grid;
-    grid-template-columns: 1fr 500px;
-    grid-template-rows: max-content max-content;
-    grid-template-areas: "name fav" "cat btn" ;
-    column-gap: 200px;
-    row-gap: 50px; 
-    align-items: flex-end; }
+    grid-template-areas: "btn txt";
+    grid-template-columns: 1fr minmax(0, 566px); 
+    align-items: end; }  
 
-    .aboutName {
-        grid-area: name;  }
+    .about__txt a{
+        grid-area: btn; }  
 
-        .aboutName p {
-            font-family: 'Founders Grotesk', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-            padding-top: 35px;
-            max-width: 600px; }
-
-    .aboutFav {
-        grid-area: fav;
-        display: grid;
-        grid-template-columns: min-content 1fr;
-        column-gap: 80px;  }
-
-        .aboutFav h3 {  
-            font-family: 'Founders Grotesk', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.5rem;
-            line-height: 2rem;
-            letter-spacing: 3px;
-            text-transform: uppercase; }
-
-        .aboutFav p {  
-            max-width: 250px; }
-
-    .aboutCat {
-        grid-area: cat;
-        display: grid;
-        grid-template-columns: max-content max-content;
-        grid-template-rows: max-content max-content;
-        column-gap: 80px;
-        row-gap: 20px;   }
-
-        .aboutCat h5 {  
-            font-family: 'Founders Grotesk', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 0.9rem;
-            line-height: 1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase; }
-
-        .aboutCat h6 {  
-            font-family: 'Founders Grotesk', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 0.8rem;
-            line-height: 1rem;
-            letter-spacing: 1px;
-            text-transform: uppercase; }
-            
-    .aboutBnt {
-        grid-area: btn;  }
+    .about__txt p{
+        grid-area: txt; }  
     
+        .about__txt a button{
+            width: 200px;
+            height: 48px;
+            padding: 0px 24px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+            border-radius: 24px;
+            background: #95FF56;
+            box-shadow: 0px 0px 12px 0px rgba(149, 255, 86, 0.31); } 
+
+            .about__txt a button p{
+                color: #0D342B;
+                font-size: 16px;
+                font-family: 'Inter', sans-serif;    
+                font-style: normal;
+                font-weight: 500;  } 
+
+/*--------- Line ---------*/
+
+.line {
+    width: 100%;
+    height: 1px; 
+    margin-top: 90px;
+    margin-bottom: 90px;
+    background-color: #EEE9E1;
+    opacity: 0.15;}
+
+
 /*--------- Philosophy ---------*/
   
-.philosophy {
+.philo {
     width: 100%;
-    height: auto; }
+    height: auto; 
+    margin-top: 90px;
+    margin-bottom: 90px;}
   
-.philosophy__box {
+.philo__box {
     width: 90%;
     height: auto;
-    margin: 80px 5% 80px 5%;  }
-
-.gridtable__txtbox {
+    margin-left:  5%; }  
+    
+.philo__title{
     width: 100%;
     height: auto;
-    margin-top: 80px;
+    margin-top: 90px; }  
+
+.philo__contain{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
     display: grid;
-    grid-template-columns: 200px 200px 200px auto 170px 330px; 
-    grid-template-areas: "col1 col2 col3 . tit bub" ; }
+    grid-template-columns: 1fr minmax(0, 500px); 
+    align-items: start; }  
 
-    .col1 { 
-        grid-area: col1;  }
+.philo__txt{
+    max-width: 610px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 50px;}   
+        
+    .philo__item{
+        max-width: 250px;
+        height: auto;
+        display: flex;
+        flex-direction: column; }  
 
-        .col2 {
-            grid-area: col2;  }
-
-            .col3 {
-                grid-area: col3;  }
-
-                .tit {
-                    grid-area: tit;  }
-
-                    .bub {
-                        grid-area: bub;  }
-
-    .gridtable__txtbox h4 {
-        margin-bottom: 20px;
-        letter-spacing: 3px; }
-
-        .gridtable__txt {
-            margin-right: 30px; }
-
-    .gridtable__subtitle {
-        align-self: flex-end;  }
-
-        .gridtable__subtitle h3 {  
-            font-family: 'Founders Grotesk', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1.5rem;
-            line-height: 1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase; 
-            margin-top: 20px;}
-
-    .gridtable__bubble {
-        display: inline-flex; 
-        flex-wrap: wrap; 
-        align-items: flex-end; }
+        .philo__item h3{
+            margin-bottom: 32px;}  
     
-        .gridtable__bubble span {
-            margin-right: 10px;
-            margin-top: 10px; }
+    .philo__svg{
+        text-align: center;}  
 
 /*--------- Process ---------*/
   
 .process {
     width: 100%;
-    height: auto; }
+    height: auto; 
+    margin-top: 110px;
+    margin-bottom: 90px;}
   
 .process__box {
     width: 90%;
     height: auto;
-    margin: 80px 5% 80px 5%;  }
+    margin-left:  5%; }  
+    
+.process__title{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px; }  
 
-    .process__box h3 {
-        margin-bottom: 40px;  }
+.process__txt{
+    max-width: 550px;
+    height: auto;
+    margin-bottom: 70px;  }  
 
-    .process__box p {
-        margin-bottom: 50px;  
-        max-width: 400px;}
-
-.process__txt {
-    display: inline-flex; 
-    flex-wrap: wrap; }
-
-    .process__txt span {
-        margin-right: 20px;
-        margin-top: 10px; }
+.process__bubbles{
+    width: 90%;
+    height: auto;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 110px; }  
 
 /*--------- Experience ---------*/
-
-.experience {
-    width: 100%;
-    height: auto; }
   
-.experience__box {
+.experie {
+    width: 100%;
+    height: auto; 
+    margin-top: 110px;
+    margin-bottom: 200px;}
+  
+.experie__box {
     width: 90%;
     height: auto;
-    margin: 80px 5% 50px 5%;  }
-
-.experience__listbox {
+    margin-left:  5%; }  
+    
+.experie__title{
     width: 100%;
     height: auto;
-    margin-top: 80px;
+    margin-bottom: 50px; }  
+
+.experie__txt{
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
     display: grid;
-    grid-template-columns: 1fr 500px;
-    align-items: flex-end; }
+    grid-template-columns: 1fr minmax(0, 566px); 
+    align-items: end; }  
 
-    .experience__list{
-        width: 275px;   }
-
-    .experience__listbox h4 {
-        margin: 15px 0 35px 20px; }
-        
-    .experience__listbox p {
-        max-width: 380px;
-        margin-bottom: 35px; }
-
-/*--------- Future (see philosophy module) ---------*/
-  
-.future {
-    width: 100%;
-    height: auto; }
-  
-.future__box {
-    width: 90%;
+.experie__item{
+    max-width: 280px;
     height: auto;
-    margin: 80px 5% 80px 5%;  }
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px; }  
 
-    .future__box p {
-        margin-top: 20px;
-        margin-bottom: 25px;  
-        max-width: 400px;}
+    .experie__item p{
+        color: #3A7265; 
+        margin-left: 20px;}  
 
-        .future__h3 {
-            margin-bottom: 40px;  }
+
 
 
 /* --------  @ MEDIA --------- */
 
-@media (max-width: 768px) {
 
-    .hero__OtherTxt {
-        margin-bottom: 20px;  }
+@media (max-width: 1024px) {
 
-    .about__txtbox {
+    
+    .about__txt{
+        grid-template-areas: "txt" "btn";
         grid-template-columns: 1fr;
-        grid-template-rows: max-content max-content max-content max-content;
-        grid-template-areas: "name" "cat" "fav" "btn" ;
-        row-gap: 50px;  }
+        grid-template-rows: auto auto; 
+        row-gap: 60px;
+        align-items: end; }  
 
-    .aboutFav {
-        grid-template-columns:1fr;
-        grid-template-rows: max-content max-content;
-        row-gap: 20px;  }
+        .about__txt p{
+            max-width: 550px;}  
 
-        .aboutFav p {  
-            max-width: 370px; }
+    .philo__contain{
+        grid-template-columns: 1fr ; 
+        grid-template-rows: auto auto;
+        row-gap: 40px;
+        align-items: start; }  
+   
+    .experie__txt{
+        grid-template-columns: 1fr ; 
+        grid-template-rows: auto auto;
+        align-items: end; 
+        row-gap: 40px;}  
 
-    .gridtable__txtbox {
-        margin-top: 60px;
-        grid-template-columns: 1fr;
-        grid-template-rows:  max-content max-content max-content max-content max-content;
-        grid-template-areas: "col1" "col2" "col3" "tit" "bub" ; 
-        row-gap: 30px; 
-        max-width: 500px; }
-            
-        .gridtable__subtitle {
-            display: inline-flex;  }
+        .experie__txt p{
+            max-width: 550px;}  
 
-            .gridtable__subtitle h3 {  
-                margin-right: 10px;
-                margin-top: 40px; }
-
-    .experience__listbox {
-        margin-top: 70px;
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content max-content; }
-
-        .experience__listbox p {
-            margin-top: 25px;
-            margin-bottom: 0;
-            max-width: 500px; }
-
-    .process__box p {
-        max-width: 500px;}
-
-        .process__txt {
-            max-width: 500px;}
-
-    .future__box p {
-        max-width: 500px;}
 }
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    .about__txtbox {
-        grid-template-columns: 1fr 250px;
-        column-gap: 100px; }
-
-        .aboutName p {
-            max-width: 450px; }
-
-    .aboutFav {
-        grid-template-columns:1fr;
-        grid-template-rows: max-content max-content;
-        row-gap: 20px;  }
-
-        .aboutFav h3 {  
-            max-width: 100px; }
-      
-        .aboutFav p {  
-            max-width: 250px; }
-}
-
-@media (min-width: 769px) and (max-width: 1180px) {
-
-    .gridtable__txtbox {
-        grid-template-columns: 200px 200px 200px auto;
-        grid-template-rows:  max-content max-content;
-        grid-template-areas: "col1 col2 col3 ." "tit bub bub bub" ; 
-        row-gap: 50px; 
-        }
-
-    .experience__listbox {
-        width: 100%;
-        height: auto;
-        margin-top: 80px;
-        display: grid;
-        grid-template-columns: 1fr 380px;
-        column-gap: 40px;
-        align-items: flex-end; }
-                
-        .experience__listbox p {
-            margin-bottom: 35px; }
-}
+    

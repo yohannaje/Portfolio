@@ -1,428 +1,509 @@
+/*--------- fonts ---------*/
+  
+.pBig {  
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px; }
+
 /*--------- Hero ---------*/
 
 .hero {
     width: 100%;
     height: auto; }
   
-.hero__box{
+.heroTitle__box{
     height: auto;
     width: 90%;
-    margin-left: 5%; }
+    margin-left: 5%; 
+    margin-top: 175px;}
   
-.hero__title {
-    width: 100%;
-    margin: 100px 0 60px 0; }
-  
-    .hero__titleTxt {
-        width: 70%;
-        margin-left: 15%;
-        margin-bottom: 50px;
-        display: grid;
-        grid-template-columns: 1.3fr 1fr;
-        justify-items: start;
-        justify-content: start;
-        align-items: flex-end ; }
-  
-.hero__titleTxtLg {
-    width: 280px; }
-  
-    .hero__titleTxtSm {
-        float: inline-start;  }
-  
-    .hero__titleTxtSm p {
-        display: inline-block;
-        margin-right: 70px;  }
-  
-.hero__imgbox {
+  .hero__title {
+      width: 100%;
+      margin-top: 10px; }  
+
+.hero__box {
     height: auto;
-    width: 100%;  }
-  
-    .hero__img {
-        max-height: 470px;
-        width: 100%;
-        object-fit: cover; 
-        object-position: top; }
-  
-.hero__subtitle {
-    height: 65px;
     width: 90%;
-    margin: 60px 2.5% 50px 5%;
-    position: relative;  }
-  
-    .hero__subtitle h3 {
-      height: auto;
-      width: 250px;
-      left: 0;
-      bottom: 0;
-      position: absolute; }
-  
-    .hero__subtitle p {
-      height: auto;
-      width: 330px;
-      right: 320px;
-      bottom: 0;
-      position: absolute; }
-  
-    .hero__subtitle button {
-      right:0;
-      bottom: 0.5rem;
-      position: absolute;
-      text-align: right; }
-  
-/*--------- mod - Left ---------*/
-  
-.modLeft {
-    width: 100%;
-    height: auto; }
-  
-.modLeft__box {
-    width: 95%;
-    margin: 40px 0 40px 5%;
+    margin: 110px 0 80px 5%;
     display: grid;
-    grid-template-columns: 1fr max-content max-content;
+    grid-template-columns: 1fr 385px;
     justify-items: start;
-    justify-content: start;
-    column-gap: 20px; }
+    justify-content: start; }
+
+.heroParr__box{
+  display: flexbox; }
+
+  .heroParr__box img{
+    width: 160px; 
+    height: auto;
+    margin-left: 76px;}
+
+  .heroParr__box p{
+    max-width: 455px;
+    margin: 15px 0px; }
+
+  .heroParr__box article{
+    border-radius: 12px;
+    background: #102520;
+    display: inline-flex;
+    height: 40px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;}
+
+    .heroParr__box article p{
+      font-size: 16px;}
   
-.modLeft__txt {
-    width: 100%;
-    height: 100%;
-    position: relative; }
-  
-.modLeft__txt h3{
-      margin-top: 25px; }
-  
-    .modLeft__table {
-      display: grid;
-      grid-template-columns: 230px 100px;
-      grid-template-rows: 30px 30px;
-      justify-items: start;
-      justify-content: start;
-      position: absolute; 
-      bottom: 120px; }  
-  
-    .modLeft__txt button {
+.heroSocial__box{
+  width: 385px;
+  height: 150px;
+  position: relative;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.20);}
+
+  .heroSocial__box h4{
+    color: #EEE9E1;
+    font-family: 'Inter', sans-serif;    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    top: 26px;
+    left: 90px;}
+
+    .heroSocial__box h5{
+      color: rgba(238, 233, 225, 0.50);
+      font-family: 'Inter', sans-serif;    
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
       position: absolute;
-      bottom: 0;  }
-  
-.modLeft__imgbox {
-    width: 380px;
-    height: 500px;  }
-  
-    .modLeft__imgbox img {
-      width: 100%;
-      height: 100%; 
-      object-fit: cover; }
-  
-/*--------- mod - Left - Single img ---------*/
-  
-.modLeft__boxSgl {
-    width: 95%;
-    margin: 40px 0 40px 5%;
-    display: grid;
-    grid-template-columns: 1fr min-content;
-    justify-items: start;
-    justify-content: start;
-    column-gap: 20px; }
-  
-.modLeft__imgboxSgl {
-    width: 780px;
-    height: 500px; }
-  
-    .modLeft__imgboxSgl img {
-      width: 100%;
-      height: 100%; 
-      object-fit: cover; }
-  
-/*--------- mod - Right ---------*/
-  
-.modRight {
-    width: 100%;
-    height: auto; }
-  
-.modRight__box {
-    width: 95%;
-    margin: 40px 5% 40px 0;
-    display: grid;
-    grid-template-columns: max-content max-content 1fr;
-    justify-items: start;
-    justify-content: start;
-    column-gap: 20px; }
-  
-.modRight__txt {
-    width: 95%;
-    height: 100%;
-    margin-left: 30px;
-    position: relative; }
-  
-.modRight__txt h3{
-      margin-top: 25px; }
-  
-    .modRight__table {
-      display: grid;
-      grid-template-columns: 230px 100px;
-      grid-template-rows: 30px 30px;
-      justify-items: start;
-      justify-content: start;
-      position: absolute; 
-      bottom: 120px; }  
-  
-    .modRight__txt button {
-      position: absolute;
-      bottom: 0;  }
-  
-.modRight__imgbox {
-    width: 380px;
-    height: 500px; }
-  
-    .modRight__imgbox img {
-        width: 100%;
-        height: 100%; 
-        object-fit: cover;}
+      top: 56px;
+      left: 90px;}
+
+.heroSocial__avatar{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 28px;
+  left: 21px; }
+
+  .heroSocial__avatar img{
+    width: 44px;
+    height: 44px;
+    border-radius: 23px; 
+    border: solid 3px #95FF56;}
+
+.heroSocial__links{
+  width: auto;
+  height: 15px;
+  position: absolute;
+  bottom: 18px;
+  left: 90px; }
+
+  .heroSocial__links ul{
+    list-style: none;
+    float: right; }
     
-/*--------- mod - Video ---------*/
+    .heroSocial__links ul li{ 
+      display: inline; } 
+
+      .heroSocial__links ul li a{ 
+        color: #EEE9E1;
+        font-family: 'Inter', sans-serif;    
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-right: 15px;} 
+
+.heroSocial__btn{
+  width: 90px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #95FF56;
+  position: absolute;
+  top: 23px;
+  right: 20px; 
+  text-align: center;}    
+
+  .heroSocial__btn p{
+    color: #0D342B;
+    font-family: 'Inter', sans-serif;    
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    margin-top: 10px; }  
   
-.modVideo {
+/*--------- Marquee ---------*/
+
+.marquee {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  background: #132D27; }
+
+.marquee p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 2s linear infinite;
+  -webkit-animation: scroll-left 2s linear infinite;
+  animation: scroll-left 20s linear infinite; }
+  
+  @-moz-keyframes scroll-left {
+      0% {
+          -moz-transform: translateX(100%);}
+      100% {
+          -moz-transform: translateX(-100%);}
+  }
+  
+  @-webkit-keyframes scroll-left {
+      0% {
+          -webkit-transform: translateX(100%);}
+      100% {
+          -webkit-transform: translateX(-100%);}
+  }
+  
+  @keyframes scroll-left {
+      0% {
+          -moz-transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%); }
+      100% {
+          -moz-transform: translateX(-100%);
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%); }
+  }
+
+/*--------- Section Right ---------*/
+  
+.secRight {
+  width: 100%;
+  height: auto; 
+  margin-top: 120px;}
+
+.secRight__box {
+  width: 90%;
+  margin-left:  5%;
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "title img" ". txt";
+  justify-items: start;
+  justify-content: start;
+  align-items: end;
+  column-gap: 50px; 
+  row-gap: 40px;}
+
+.secRight__title {
+  width: 100%;
+  height: auto;
+  grid-area: title; }
+
+  .secRight__title h5{
+    color: #EEE9E1;
+    opacity: 0.4;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 2.1px;
+    margin-bottom: 10px;}
+
+    .secRight__bubblesBox {
+      max-width: 580px;
+      width: 100%;
+      margin-top: 65px;
+      display: grid;
+      grid-template-columns: 1fr 104px;
+      column-gap: 70px;}
+  
+      .secRight__bubbles {
+        max-width: 380px;
+        display: inline-flex;
+        padding: 13px 25px 13px o;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;}
+
+.secRight__img {
+  width: 100%;
+  height: auto;
+  grid-area: img; }
+
+      .secRight__img img {
+        border-radius: 11px;
+        width: 100%;
+        height: auto; }
+
+.secRight__txt {
+  width: 100%;
+  height: auto;    
+  grid-area: txt; }
+
+
+/*--------- Section Top ---------*/
+  
+.secTop {
+  width: 100%;
+  height: auto; 
+  margin-top: 170px;
+  margin-bottom: 120px;}
+
+.secTop__box {
+  width: 90%;
+  margin-left:  5%;
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "img img" "title txt";
+  justify-items: start;
+  justify-content: start;
+  align-items: start;
+  column-gap: 70px; 
+  row-gap: 70px;}
+
+.secTop__title {
+  width: 100%;
+  height: auto;
+  grid-area: title; }
+
+    .secTop__bubblesBox {
+      max-width: 580px;
+      margin-top: 65px;
+      display: grid;
+      grid-template-columns: 1fr 104px;
+      column-gap: 70px;}
+  
+      .secTop__bubbles {
+        max-width: 380px;
+        display: inline-flex;
+        padding: 13px 25px 13px o;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;}
+
+.secTop__img {
+  width: 100%;
+  height: auto;
+  grid-area: img; }
+
+      .secTop__img img {
+        border-radius: 11px;
+        width: 100%;
+        height: auto; }
+
+.secTop__txt {
+  width: 100%;
+  height: auto;    
+  grid-area: txt; }
+
+  .secTop__txt h3{
+    margin-top: 90px; }
+
+/*--------- Section Left ---------*/
+  
+.secLeft {
+  width: 100%;
+  height: auto; 
+  margin-top: 120px;}
+
+.secLeft__box {
+  width: 90%;
+  margin-left:  5%;
+  display: grid;
+  grid-template-columns: 1fr 45%;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "img title" "txt .";
+  justify-items: start;
+  justify-content: start;
+  align-items: end;
+  column-gap: 50px; 
+  row-gap: 40px;}
+
+.secLeft__title {
+  margin-left: 40px;
+  width: 100%;
+  height: auto;
+  grid-area: title; }
+  
+  .secLeft__title h2{
+    max-width: 470px;}
+
+  .secLeft__title h5{
+    color: #EEE9E1;
+    opacity: 0.4;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 2.1px;
+    margin-bottom: 10px;}
+
+  .secLeft__bubblesBox {
+    max-width: 580px;
     width: 100%;
-    height: auto; }
-  
-.modVideo__title {
-    width: 95%;
-    margin-left: 5%;
-    height: auto; }
-  
-    .modVideo__title h3{
-      padding-top: 90px;
-      padding-bottom: 85px; }
-  
-.modVideo__video {
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: 1fr 104px;
+    column-gap: 20px;}
+
+    .secLeft__bubbles {
+      max-width: 320px;
+      display: inline-flex;
+      padding: 13px 25px 13px o;
+      justify-content: left;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;}
+
+.secLeft__img {
     width: 100%;
-    height: 520px; }
+    height: auto;
+    grid-area: img; }
+
+      .secLeft__img img {
+          border-radius: 11px;
+          width: 100%;
+          height: auto; }
+
+.secLeft__txt {
+  width: 100%;
+  height: auto;    
+  grid-area: txt; }
+
+
+/*--------- Section About ---------*/
   
-.modVideo__txt {
-    width: 90%;
-    margin-left: 5%;
-    height: 190px;
-    position: relative; }
-  
-    .modVideo__txt p {
-      max-width: 350px;
-      position: absolute;
-      left: 0; 
-      bottom: 30px;}
-  
-    .modVideo__txtWeb {
-      width: 250px;
-      position: absolute;
-      right: 250px; 
-      bottom: 30px;}
-  
-    .modVideo__txtlink {
-      width: 170px;
-      position: absolute;
-      right: 0; 
-      bottom: 30px;}
+.secAbout {
+  width: 100%;
+  height: auto; 
+  margin-top: 200px;
+  margin-bottom: 250px;}
+
+.secAbout__box {
+  width: 90%;
+  height: auto;
+  margin-left:  5%;}    
+
+.secAbout__contain {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "title img txt";
+  justify-items: start;
+  justify-content: start;
+  align-items: end;
+  column-gap: 40px; 
+  margin-top: 40px; }     
+
+.secAbout__title {
+  grid-area: title; 
+  margin-bottom: 40px;}
+
+  .secAbout__bubblesBox {
+    max-width: 560px;
+    width: 100%;
+    margin-top: 65px; }
+
+    .secAbout__bubbles {
+      display: inline-flex;
+      padding: 13px 0 13px 0;
+      justify-content: left;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;}
+
+.secAbout__img {
+  grid-area: img; }
+
+    .secAbout__img img {
+      margin-top: 40px;
+      width: 100%;
+      height: auto; }
+ 
+.secAbout__txt {
+  grid-area: txt; 
+  align-self: flex-start;}
+
+    .secAbout__txt p {
+        margin-bottom: 45px;}
+
 
 /* --------  @ MEDIA --------- */
 
+@media (max-width: 1024px) {
 
-@media (max-width: 768px) {
+  .pBig {  
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px; }
 
-  .hero__title {
-    overflow: hidden; }
-
-  .hero__titleTxt {
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 1fr;
-    align-items: flex-start ; }
-
-  .hero__img {
-      max-height: auto; }
-  
-  .hero__subtitle {
-      height: 65px;
-      width: 90%;
-      margin: 30px 2.5% 250px 5%;
-      position: relative;  }
-    
-      .hero__subtitle h3 {
-        width: 250px;
-        left: 0;
-        top: 135px; }
-    
-      .hero__subtitle p {
-        width: 300px;
-        left: 0;
-        top: 0px; }
-    
-      .hero__subtitle button {
-        width: 240px;
-        left: 0;
-        top: 230px; }
-
-  .modLeft__box {
-    grid-template-columns: 1fr;
-    grid-template-rows: 330px 1fr 1fr;
-    row-gap: 20px; }
-
-    .modLeft__txt button {
-      bottom: 20px;  }
-
-    .modLeft__table {
-      bottom: 95px; }  
-
-    .modLeft__imgbox {
-      width: 95%;
-      height: auto;  }
-
-  .modLeft__boxSgl {
-    grid-template-columns: 1fr;
-    grid-template-rows: 330px 1fr;
-    row-gap: 20px; }
-  
-    .modLeft__imgboxSgl {
-        width: 95%;
-        height: auto;  }
-
-  .modRight__box {
-    grid-template-columns: 1fr;
-    grid-template-rows:  1fr 1fr 330px;
-    row-gap: 20px; }
-
-    .modRight__txt {
-      margin-left: 5%;
-      margin-top: 20px; }
-
-    .modRight__txt button {
-      bottom: 20px;  }
-
-    .modRight__table {
-      bottom: 95px; } 
-
-    .modRight__imgbox {
-      width: 95%;
-      margin-left: 5%;
-      height: auto;  }
-
-  .modVideo__video {
-    width: 100%;
-    height: auto; }
-
-  .modVideo__txt {
-    height: 230px; }
-
-    .modVideo__txt p {
-      max-width: 320px;
-      left: 0; 
-      top: 30px;}
-
-    .modVideo__txtWeb {
-      left: 0; 
-      bottom: 55px;}
-
-    .modVideo__txtlink {
-      left: 0; 
-      bottom: 30px; }
-
-}
-
-
-@media (min-width: 769px) and (max-width: 1180px) {
-
-   .hero__subtitle {
-      height: 65px;
-      width: 90%;
-      margin: 30px 2.5% 250px 5%;
-      position: relative;  }
-    
-      .hero__subtitle h3 {
-        width: 250px;
-        left: 0;
-        top: 135px; }
-    
-      .hero__subtitle p {
-        width: 300px;
-        left: 0;
-        top: 0px; }
-    
-      .hero__subtitle button {
-        width: 250px;
-        left: 0;
-        top: 230px; }
-
-  .img1{
-    grid-area: img1; }
-
-  .img2{
-    grid-area: img2; }
-
-  .txt{
-    grid-area: txt;  }
-
-  .modLeft__box {
+  .hero__box {
+    height: auto;
     width: 90%;
-    margin: 40px 5% 40px 5%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 330px 1fr ;
-    grid-template-areas: "txt ." "img1 img2" ;
-    row-gap: 20px; }
-
-    .modLeft__txt button {
-      bottom: 20px;  }
-
-    .modLeft__table {
-      bottom: 95px; }  
-
-    .modLeft__imgbox {
-      width: 100%;
-      height: auto;  }
-
-  .modLeft__boxSgl {
+    margin: 70px 0 80px 5%;
     grid-template-columns: 1fr;
-    grid-template-rows: 330px 1fr;
-    row-gap: 20px; }
-  
-    .modLeft__imgboxSgl {
-        width: 95%;
-        height: auto;  }
+    grid-template-rows: auto auto;
+    row-gap: 40px;}
 
-  .modRight__box {
-    width: 90%;
-    margin: 40px 5% 40px 5%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 330px;
-    grid-template-areas:  "img1 img2" "txt .";
-    row-gap: 20px; }
+  .secRight__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title" "img" "txt";
+    row-gap: 40px;}
 
-    .modRight__txt {
-      width: 100%;
-      margin-left: 0;
-      margin-top: 20px; } 
+      .secRight__title {
+        margin-bottom: 40px; }
 
-    .modRight__txt button {
-      bottom: 20px;  }
+  .secTop__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "img" "title" "txt";
+    row-gap: 80px;}
 
-    .modRight__table {
-      bottom: 95px; } 
+      .secTop__txt h3{
+        margin-top: 0px; 
+        margin-bottom: 50px;}
 
-    .modRight__imgbox {
-      width: 100%;
-      height: auto;  }
+  .secLeft__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "img" "title" "txt";
+    row-gap: 70px;}
 
-  .modVideo__txt {
-    height: 230px; }
+      .secLeft__title {
+        margin-left: 0px; }
 
-    .modVideo__txt p {
-      max-width: 360px;
-      left: 0; 
-      top: 30px;}
+  .secAbout__contain {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title img" "txt img";
+    align-items: center;
+    column-gap: 5%; 
+    row-gap: 40px;
+    margin-top: 70px; }    
 
-    .modVideo__txtWeb {
-      left: 0; 
-      bottom: 55px;}
-
-    .modVideo__txtlink {
-      left: 0; 
-      bottom: 30px; }
+      .secAbout__img img {
+        margin-top: 0px;
+        margin-bottom: 80px; }
 
 }
